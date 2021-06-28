@@ -46,6 +46,8 @@ public class MakeDataForExpandableList {
                 continue;
             }
             List<String> childItem = new ArrayList<>();
+            childItem.add("Min SDK Version =" + info.minSdkVersion);
+            childItem.add("Target SDK Version =" + info.targetSdkVersion);
             childItem.add("Package Name :\n" + info.packageName);
             childItem.add("Class Name :\n" + info.name);
             arrayList.add(childItem);
